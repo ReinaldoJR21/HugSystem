@@ -1,3 +1,5 @@
+console.log('Working!');
+
 let boxUm = document.querySelector(".form__container.primeiro");
 let boxDois = document.querySelector(".form__container.segundo");
 
