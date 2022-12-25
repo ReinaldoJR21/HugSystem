@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+     <!-- === === ICONS - BOXICONS === === -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Finalizado | Mercado Livre.</title>
+</head>
+<body class="sucesso">
+    <div class="form__box sucesso">
+        <a href="./index.html">
+            <img class="logo" src="./assets/img/logo.png" alt="Mercado Livre">
+        </a>
+
+        <form action="#" method="POST" class="form__container sucesso">
+            <div class="form__header sucesso">
+                <i class='bx bx-check-circle form__sucessoIcon'></i>
+                <div class="form__title sucesso">
+                    <h1 class="form__titleText">Entrega realizada.</h1>
+                    <h2 class="form__titleDescription">Parabéns! Você é a <strong>melhor</strong> receptadora de abraços que já vimos.</h2>
+
+                </div>
+            </div>
+        </form>
+
+        <a class="novosAbracos" onclick="contrato()">
+            <span class="novosAbracos__title">
+                <i class='bx bxs-error novosAbracos__icon' ></i>
+                Atenção!
+            </span>
+            <span class="novosAbracos__description">
+                Essa entrega foi experimental. <br>Se foi do seu agrado e quiser manter essas entregas toque aqui!
+            </span>
+        </a>
+    </div>
+    
+
+    <script>
+        function contrato() {
+            alert('Novos abraços serão entregues. Agradeçemos :)');
+        }
+    </script>
+</body>
+</html>

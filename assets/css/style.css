@@ -1,0 +1,280 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+
+/* Geral */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins';
+    background-color: #ffdb15;
+}
+
+/* Logo */
+.logo {
+    margin: 2rem;
+    width: 150px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Form */
+
+@media screen and (max-width: 480px){ /* Celulares */
+    .form__box {
+        height: 100vh;
+        width: 100%;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 2rem;
+    }
+
+    .form__box.sucesso {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .form__container {
+        padding: 2rem;
+        border-radius: 1rem;
+        background-color: #FFF;
+
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .form__content.sucesso {
+        display: flex;
+        flex-direction: column;
+
+        gap: 2rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        background-color: #FFF;
+    }
+
+    .form__container.primeiro {
+        gap: 2.5rem;
+    }
+
+    .form__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .form__header.sucesso {
+        background: #FFF;
+        border-radius: 1rem;
+    }
+
+    .form__title {
+        text-align: left;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form__title.sucess {
+        gap: 0rem;
+    }
+
+    .form__titleText,
+    .form__contractTile {
+        font-size: 1.8rem;
+    }
+
+    .form__titleText.paddingText {
+        color: #FFF;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: #3483fa;
+    }
+
+    .form__titleDescription,
+    .form__contractDescription {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #212121;
+    }
+
+    .form__explicacaoEntrega {
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+
+    .form__titleIcon,
+    .form__titleIconPag2,
+    .form__sucessoIcon {
+        font-size: 3rem;
+
+        padding: 1rem;
+        color: white;
+        border-radius: 50%;
+        background-color: #ffdb15;
+    }
+
+    .form__sucessoIcon {
+        padding: 0;
+        font-size: 6rem;
+        background-color: #ffdb15;
+    }
+    
+    .input__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .input__wrapper.text {
+        margin-bottom: 2rem;
+    }
+
+    .input__wrapperCheckbox {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        gap: 1rem;
+
+        margin-bottom: 2.5rem;
+    }
+
+    .input__wrapperCheckbox.sucesso {
+        margin-bottom: 0;
+    }
+
+    .input__wrapperCheckbox label {
+        font-size: 1.5rem;
+    }
+
+    .input__wrapper label {
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-left: 2rem;
+    }
+
+    .input__wrapper input[type=text] {
+        padding: 2rem 1rem;
+        outline: none;
+        appearance: none;
+        border: none;
+
+        font-size: 1.6rem;
+        border: 2px solid rgb(133, 133, 133);
+        border-radius: 1rem;
+    }
+
+    .input__wrapper input[type=text]:focus {
+        border: 2px solid #3483fa;
+    }
+
+    .button {
+        padding: 2rem 3rem;
+
+        color: #FFF;
+        text-align: center;
+        text-decoration: none;
+
+        font-weight: bold;
+        border: none;
+        border-radius: 1rem;
+        background: #3483fa;
+
+        transition: .2s ease;
+    }
+
+    #botaoAguardar.disabled {
+        pointer-events: none;
+        background: #CCC;
+    }
+
+    /* Product */
+    .product__content {
+        padding: 2rem;
+        margin: 2rem auto;
+        width: 241px;
+        border-radius: 1rem;
+        border: 1px solid #CCC;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product__title {
+        font-size: 1.7rem;
+    }
+
+    .product__img {
+        height: 150px;
+        background-color: #FFF;
+        border-radius: 1rem;
+    }
+    
+    /* Novos abraços */
+    .novosAbracos {
+        padding: 1rem 2rem;
+        color: #FFF;
+        border: 2px solid rgb(167, 0, 0);
+        border-radius: 1rem ;
+        background-color: red;
+    }
+    
+    .novosAbracos__title {
+        display: flex;
+        align-items: center;
+        
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    .novosAbracos__description {
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+
+    .novosAbracos__icon {
+        padding: .7rem;
+        font-size: 2rem;
+        border-radius: 50%;
+        border: 2px solid white;
+
+        margin-right: 1rem;
+    }
+
+    /* Exibição dos Forms */
+
+    .form__container.primeiro {
+        display: flex;
+    }
+
+    .form__container.primeiro.hide {
+        display: none;
+    }
+
+    .form__container.segundo {
+        display: none;
+    }
+
+    .form__container.segundo.show {
+        display: flex;
+    }
+}

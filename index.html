@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+     <!-- === === ICONS - BOXICONS === === -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Realiza sua entrega | Mercado Livre.</title>
+</head>
+<body>
+    <div class="form__box">
+        <a href="./index.html">
+            <img class="logo" src="./assets/img/logo.png" alt="Mercado Livre">
+        </a>
+
+        <form action="#" method="" class="form__container primeiro">
+            <div class="form__header">
+                <i class='bx bx-pin form__titleIcon'></i>
+                <div class="form__title">
+                    <h1 class="form__titleText">Você chegou ao destinatário.</h1>
+                    <h2 class="form__titleDescription">Realize a sua entrega no prazo de 10 minutos.</h2>
+                </div>
+            </div>
+            <div class="form__content">
+                <div class="input__wrapper text">
+                    <label for="receptorDoAbraco">Nome do receptor:</label>
+                    <input id="receptorDoAbraco" type="text" placeholder="Quem está recebendo?" autocomplete="nope">
+                </div>
+
+                <div class="input__wrapper">
+                    <a id="buttonNome" onclick="passarDeBox()" class="button" href="#">Continuar</a>
+                </div>
+
+            </div>
+        </form>
+
+        <form action="#" method="POST" class="form__container segundo">
+            <div class="form__header">
+                <div class="form__title">
+                    <h1 class="form__titleText paddingText">Olá, <span id="output"> </span>!</h1>
+
+                    <div class="product__content">
+                        <h3 class="product__title">Imagem do produto:</h3>
+                        <img class="product__img" src="./assets/img/produto.png" alt="">
+                    </div>
+
+                    <h2 class="form__explicacaoEntrega">Detalhes da sua entrega:</h2>
+                    <h2 class="form__titleDescription">Esse rapaz na sua frente tem um abraço para te entregar. Você pode receber essa encomenda?</h2>
+                </div>
+                <!-- <i class='bx bx-info-circle form__titleIcon'></i> -->
+            </div>
+            <div class="form__content">
+                <div class="input__wrapperCheckbox">
+                    <input onchange="toggleButton()" class="inputCheckbox" type="checkbox" id="aceitarAbraco">
+                    <label for="aceitarAbraco">Sim. Concordo em receber o abraço!</label>
+                </div>
+
+                <div class="input__wrapper">
+                    <a id="botaoAguardar" class="button disabled dois" href="./aguardar.html">Avançar.</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="./assets/js/index.js" defer></script>
+    <script>
+        var receptorDoAbraco = document.getElementById('receptorDoAbraco');
+        var InserirNomeDaPessoa = document.getElementById('output');
+        var buttonNome = document.getElementById('buttonNome');
+
+        buttonNome.addEventListener("click", func1);
+
+        function func1() {
+            InserirNomeDaPessoa.innerHTML = receptorDoAbraco.value;
+        }
+
+        function toggleButton() {
+            const euConcordoCheckBox = document.querySelector("#aceitarAbraco");
+            const oBotao = document.querySelector('.button.dois');
+
+            if(euConcordoCheckBox.checked == true){
+                oBotao.classList.remove('disabled');
+            } else {
+                oBotao.classList.add('disabled');
+            }
+
+            console.log('Opa');
+        }
+
+
+
+    </script>
+</body>
+</html>

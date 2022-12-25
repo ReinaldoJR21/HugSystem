@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+     <!-- === === ICONS - BOXICONS === === -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Aguardando... | Mercado Livre.</title>
+</head>
+<body>
+    <div class="form__box">
+        <a href="./index.html">
+            <img class="logo" src="./assets/img/logo.png" alt="Mercado Livre">
+        </a>
+
+        <form action="#" method="" class="form__container primeiro">
+            <div class="form__header">
+                <i class='bx bx-stopwatch form__titleIcon'></i>
+                <div class="form__title">
+                    <h1 class="form__titleText">Aguardando abraço...</h1>
+                    <h2 class="form__titleDescription">Após entregar, finalize.</h2>
+                </div>
+            </div>
+            <div class="form__content">
+                <div class="input__wrapper">
+                    <a id="buttonNome" class="button" href="./sucesso.html">Finalizar</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="./assets/js/index.js" defer></script>
+    <script>
+        var receptorDoAbraco = document.getElementById('receptorDoAbraco');
+        var InserirNomeDaPessoa = document.getElementById('output');
+        var buttonNome = document.getElementById('buttonNome');
+
+        buttonNome.addEventListener("click", func1);
+
+        function func1() {
+            InserirNomeDaPessoa.innerHTML = receptorDoAbraco.value;
+        }
+
+    </script>
+</body>
+</html>
